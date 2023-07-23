@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEMBERSHIP</title>
+    <style>
+        body{
+            background-color: #63a5ea;
+        }
+        #dumbell{
+            height: 40px;
+            padding-top: 5px;
+        }
+        #main{ 
+            background-color: black;
+            color: white;
+            font-size: 50px;
+            text-align: right;
+            font-style: italic;
+            padding:20px;
+            border-radius: 21px;
+        }
+        .btn{
+            
+            border-radius: 5px; /* Remove borders */
+            color: black; /* White text */
+            padding: 12px; /* Some padding */
+            float: left;
+            font-size: 20px; /* Set a font size */
+            cursor: pointer; /* Mouse pointer on hover */
+        }
+
+        .btn:hover {
+            background-color: lightgreen;
+            color:yellow;
+        }
+       .headbut{
+           float: left;
+           padding: 15px;
+           border-radius: 5px;
+           margin-left: 13px;
+       }
+       .headbut:hover{
+           background-color:lightgreen;
+           color:yellow;
+       }
+       #memd{
+           border: 7px solid black;
+           padding:5px;
+           border-radius: 10px;
+           background-color: beige;
+           text-align: center;
+           color: darkblue;
+           font-size: xx-large ;
+           font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+           font-weight: bold;
+           font-style: italic;
+
+       }
+       .content-table{
+           border-collapse: collapse;
+           margin: 25px 0px;
+           margin-left: 5px;
+           font-size: 2em;
+           min-width: 400px;
+           border-radius: 5px 5px 0 0;
+           overflow: hidden;
+           box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); 
+       }
+       
+       .content-table thead tr{
+           background-color: #e7e7ef;
+           color: black;
+           text-align: left;
+           font-weight: bold;
+       }
+       .content-table th,
+       .content-table td{
+           padding: 12px 15px;
+       }
+
+       .content-table tbody tr{
+           border-bottom: 1px solid black;
+       }
+       .content-table tbody tr:nth-of-type(even){
+           background-color: white;
+       }
+       .content-table tbody tr:last-of-type{
+           border-bottom: 2px soild black ;
+       }
+    </style>
+</head>
+<body>
+    <h1 id="main"><img src="https://www.freepnglogos.com/uploads/dumbbell/dumbbell-clipart-etsy-3.png" id="dumbell"> UNSTOPPABLE <img src="https://www.freepnglogos.com/uploads/dumbbell/dumbbell-clipart-etsy-3.png" id="dumbell">
+   
+        <a href="index.html"><button class="btn"><i class="fa fa-home"></i></button></a>
+       <button id="login" class="headbut">Log In</button>
+       <a href="locations.html"><button id="location" class="headbut">Location</button></a>
+       <button id="aboutus" class="headbut">About Us</button>
+       <button id="contactus" class="headbut">Contact Us</button>
+       </h1>
+
+       <h2 id="memd">MEMBERSHIP DETAILS</h2>
+       <table class="content-table"> 
+           <thead>
+               <tr>
+                   <th>S.No.</th>
+                   <th>Type</th>
+                   <th>Period</th>
+                   <th>Facilities</th>
+                   <th>Price(In Rs.)</th>
+               </tr>
+           </thead>
+           <tbody>
+               <tr>
+                   <td>1</td>
+                   <td>Cardio</td>
+                   <td>1 month</td>
+                   <td>Only Cardio machines accessible</td>
+                   <td>1000</td>
+               </tr>
+               <tr>
+                   <td>2</td>
+                   <td>Normal</td>
+                   <td>1 month</td>
+                   <td>All equipments accessible</td>
+                   <td>2000</td>
+               </tr>
+               <tr>
+                <td>3</td>
+                <td>Silver</td>
+                <td> 3 month</td>
+                <td>All equipments accessible with normal trainer</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Gold</td>
+                <td>6 month</td>
+                <td>All equipments accessible with personal trainer </td>
+                <td>9500</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Platinum</td>
+                <td>12 month</td>
+                <td>All equipments accessible with personal trainer and 1kg MUSCLEBLAZE FREE PROTEIN</td>
+                <td>18000</td>
+            </tr>
+           </tbody>
+       </table>
+
+</body>
+</html>
