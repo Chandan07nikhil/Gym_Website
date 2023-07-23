@@ -1,15 +1,15 @@
-# Project-1
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>UNSTOPPABLE</title>
+    <link rel="stylesheet" href="style.css">
+
     <style>
-        body{
-            background-color: #63a5ea;
-        }
         #dumbell{
             height: 40px;
             padding-top: 5px;
@@ -21,6 +21,21 @@
             text-align: right;
             font-style: italic;
             padding:20px;
+            border-radius: 21px;
+        }
+        .btn{
+            
+            border-radius: 5px; /* Remove borders */
+            color: black; /* White text */
+            padding: 12px; /* Some padding */
+            float: left;
+            font-size: 20px; /* Set a font size */
+            cursor: pointer; /* Mouse pointer on hover */
+        }
+
+        .btn:hover {
+            background-color: lightgreen;
+            color:yellow;
         }
        .headbut{
            float: left;
@@ -41,57 +56,120 @@
         text-align: center;
         background-color: antiquewhite;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border-radius: 15px;
       }
       #star{
           width: 20px;
           margin-left: 5px; ;
       }
-
+    
       .exerimg{
+
         height: 350px;
         width: 400px;
         border: 7px solid black;
         margin-left: 30px;
         margin-top: 10px;
         padding: 10px;
+        
       }
       #mem{
-
+          
           margin-top: 15px;
-          margin-left: 650px;
+          margin-bottom: 15px;
+          margin-left: 580px;
           float: left;
           border-radius: 7px;
           font-size: larger;
           padding: 10px;
           font-style: italic;
           font-weight: bold;
+          text-align: center;
 
       }
       #amem{
+          display: inline-block;
           font-style: normal;
           text-decoration: none;
           color: red;
+          
       }
-
-    </style>
+    </style> 
+  
 </head>
 <body>
-
+   
    <h1 id="main"><img src="https://www.freepnglogos.com/uploads/dumbbell/dumbbell-clipart-etsy-3.png" id="dumbell"> UNSTOPPABLE <img src="https://www.freepnglogos.com/uploads/dumbbell/dumbbell-clipart-etsy-3.png" id="dumbell">
+   
+    <a href="index.html"><button class="btn"><i class="fa fa-home"></i></button></a>
    <button id="login" class="headbut">Log In</button>
-   <button id="location" class="headbut">Location</button>
+   <a href="locations.html"><button id="location" class="headbut">Location</button></a>
    <button id="aboutus" class="headbut">About Us</button>
    <button id="contactus" class="headbut">Contact Us</button>
    </h1>
 
-   <h2 id="tagline"> <img src="https://www.freeiconspng.com/uploads/5-star-icon-5.jpeg" id="star"> <img src="https://www.freeiconspng.com/uploads/5-star-icon-5.jpeg" id="star"> <img src="https://www.freeiconspng.com/uploads/5-star-icon-5.jpeg" id="star"> ONE of the best gym in HARI NAGAR<img src="https://www.freeiconspng.com/uploads/5-star-icon-5.jpeg" id="star"><img src="https://www.freeiconspng.com/uploads/5-star-icon-5.jpeg" id="star"><img src="https://www.freeiconspng.com/uploads/5-star-icon-5.jpeg" id="star"> </h2>
-   <marquee>
-    <img src="https://api.time.com/wp-content/uploads/2020/03/gym-coronavirus.jpg" alt="Dumbell" class="exerimg" id="db">
-     <img src="https://m.economictimes.com/thumb/msid-77342362,width-1200,height-900,resizemode-4,imgsize-419941/gym.jpg" alt="BenchPress" class="exerimg" id="bp">
-    <img src="https://static.independent.co.uk/2021/04/12/08/11231232-4e2870de-53b3-4507-b45e-bdc76ace6cd7.jpg?quality=75&width=982&height=726&auto=webp" alt="Pushup" class="exerimg" id="pu"> 
-  // <img src="https://media.istockphoto.com/photos/side-view-of-beautiful-muscular-woman-running-on-treadmill-picture-id1132086660?k=20&m=1132086660&s=612x612&w=0&h=UTXXsDbUuREHV0UwHThgI144yKyReetDYlIL5C6_JoI=">
+   <h2 id="tagline"> <img src="https://www.freeiconspng.com/uploads/5-star-icon-5.jpeg" id="star"> <img src="https://www.freeiconspng.com/uploads/5-star-icon-5.jpeg" id="star"> <img src="https://www.freeiconspng.com/uploads/5-star-icon-5.jpeg" id="star"> ONE of the best gym in DELHI<img src="https://www.freeiconspng.com/uploads/5-star-icon-5.jpeg" id="star"><img src="https://www.freeiconspng.com/uploads/5-star-icon-5.jpeg" id="star"><img src="https://www.freeiconspng.com/uploads/5-star-icon-5.jpeg" id="star"> </h2>
 
-</marquee>
-    <button id="mem"><a href="" id="amem">MEMBERSHIP</a></button>
+   <div class ="slider-frame">
+    <div class="slide-images">
+            <div class="img-container">
+            <img src="https://api.time.com/wp-content/uploads/2020/03/gym-coronavirus.jpg" alt="Dumbell" class="exerimg" id="db">
+            </div>
+            <div class="img-container">
+            <img src="https://m.economictimes.com/thumb/msid-77342362,width-1200,height-900,resizemode-4,imgsize-419941/gym.jpg" alt="BenchPress" class="exerimg" id="bp">
+            </div>
+            <div class="img-container">
+            <img src="https://static.independent.co.uk/2021/04/12/08/11231232-4e2870de-53b3-4507-b45e-bdc76ace6cd7.jpg?quality=75&width=982&height=726&auto=webp" alt="Pushup" class="exerimg" id="pu"> 
+            </div>
+            <div class="img-container">
+            <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202107/Delhi_gyms_2.JPG?01B44Nrynrb1e.Wd1zwAwn1IhFsIocKT&size=770:433" alt="Dumebell2" class="exerimg" id="db2">
+            </div>
+            <div class="img-container">
+            <img src="https://telanganatoday.com/wp-content/uploads/2022/06/Gyms.jpg" alt="Treadmill" class="exerimg" id="tm">
+            </div>
+    </div>
+</div>
+<button id="mem"><a href="membership.html" id="amem">MEMBERSHIP DETAILS</a></button>
+<hr>
+<footer>
+       <div class="row"> 
+           <div class= "col">
+              <img src="https://www.freepnglogos.com/uploads/dumbbell/dumbbell-clipart-etsy-3.png" class="logo">
+              <p> we have 50 yr of experience </p>
+           </div>
+
+           <div class= "col">
+               <h3>OFFICE <div class="underline"><span></span></div> </h3>
+               <p>H-112/113 B-Block</p>
+               <p>Vikas Nagar</p>
+               <P>New Delhi-59</P>
+               <p class="email-id"> CSA@gmail.com</p>
+               <h4> +91-9853221162</h4>
+            </div>
+
+           <div class= "col"> 
+               <h3>Links <div class="underline"><span></span></div></h3>
+               <ul>
+                   <li><a href=""> HOME</a></li>
+                   <li><a href=""> SERVICES</a></li>
+                   <li><a href=""> ABOUT</a></li>
+                   <li><a href=""> CONTACT</a></li>
+                   
+               </ul>
+           </div>
+
+           <div class= "col">
+               <h3>Follow us <div class="underline"><span></span></div></h3>
+               <div class="social-links">
+                 <a href=""><i class="fab fa-facebook-f"></i></a>
+                 <a href=""><i class="fab fa-twitter"></i></a>
+                 <a href=""><i class="fab fa-instagram"></i></a>
+                 <a href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+    </div>
+   
+    <p class="copyright"> &copy; 2022 UNSTOPPABLE GYM - ALL Rights Reserved</p>
+</footer>
 </body>
 </html>
